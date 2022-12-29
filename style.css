@@ -159,16 +159,6 @@ header.logo img {
     background: #E5E5E5;
 }
 
-.main-container-child .outputarea h1 {
-    color: #0A3871;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .main-container-child  .outputarea textarea {
     width: 420px;
     height: 120px;
@@ -205,7 +195,7 @@ header.logo img {
     align-items: center;
     font-weight: bold;
     margin-top: 25px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     letter-spacing: 1px;
 }
 
@@ -298,7 +288,7 @@ p {
 
     .main-container-child .inputarea-box {
         margin-top: 650px;
-        padding: 20px;
+       align-items: center;
     }
     .main-container-child .inputarea-box textarea {
         width: 350px;
@@ -322,7 +312,7 @@ p {
     }
     .main-container-child .outputarea {
         width: 400px;
-        height: 500px;
+        height: 520px;
         margin-top: 0px;
     }
 
@@ -344,18 +334,24 @@ p {
 
 @media screen and (max-width: 474px) {
 
+    header.logo img {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
     header h1 {
-        font-size: 26px;
+        font-size: 25px;
     }
     .main-container-child .inputarea-box textarea {
-        width: 370px;
+        width: 300px;
     }
     .main-container-child .outputarea {
         width: 340px;
-        height: 500px;
+        height: 520px;
     }
     .main-container-child .outputarea textarea  {
         width: 330px;
-        height: 74px;
+        height: 90px;
     }
 }
