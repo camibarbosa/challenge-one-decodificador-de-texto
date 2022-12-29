@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 100%);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea {
+    text-align: center;
+    align-items: center;
+    resize: none;
+    justify-content: center;
+    border-radius: 10px;
+    text-transform: lowercase;
+
+}
+
+ header {
+    border-bottom: 1px solid #d8dfe880 ;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: #0A3871;
+    letter-spacing: 3px;
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header.logo img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.main-container-child {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.main-container-child .inputarea-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.inputarea-box textarea {
+    width: 420px;
+    height: 220px;
+    background: #e5e5e547;
+    border: 1px solid #0A3871;
+    color: #343A40;
+    font-size: 1rem;
+}
+
+.inputarea-box textarea::placeholder{
+    color: #0A3871;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main-container-child .inputarea-box .alert {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-container-child .inputarea-box .alert ion-icon {
+    color: #495057;
+    height: 30px;
+    width: 30px;
+}
+
+.main-container-child .inputarea-box .alert span {
+    color: #343A40;
+}
+
+.main-container-child .inputarea-box button {
+    width: 228px;
+    height: 64px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.main-container-child .inputarea-box  ion-icon {
+    color: #343A40;
+}
+
+.main-container-child .inputarea-box .cripto-btn {
+    background: #9795f0;
+    color: #343A40;
+    transition: .3s ease;
+}
+
+.main-container-child .inputarea-box .cripto-btn:hover {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.main-container-child .inputarea-box .descripto-btn {
+    border: 1px solid #0A3871;
+    color: #343A40;
+    margin-left: 15px;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.main-container-child .inputarea-box .descripto-btn:hover {
+    background: #9795f0;
+    color: #343A40;
+    transition: .3s ease;
+    border: none;
+}
+
+/*--------------------------------------------------------*/
+
+.main-container-child  .outputarea {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+    background: #E5E5E5;
+}
+
+.main-container-child .outputarea h1 {
+    color: #0A3871;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-container-child  .outputarea textarea {
+    width: 420px;
+    height: 64px;
+    border: 1px solid #49505729;
+    margin: 9px;
+    background: #E5E5E5;
+    border-radius: 10px;
+    color: #343A40;
+    font-size: 20px;
+}
+
+.main-container-child  .outputarea .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container-child  .outputarea .image {
+    width: 160px;
+    height: 140px;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container-child .outputarea button {
+    width: 128px;
+    height: 44px;
+    border: none;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 24px;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 90px;
+    letter-spacing: 1px;
+}
+
+.main-container-child .outputarea .copiar {
+    border: 1px solid #a6c1ee;
+    color: #343A40;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.main-container-child .outputarea .copiar:hover {
+    background: #a6c1ee;
+    color: #343A40;
+    transition: .3s ease;
+}
+
+.main-container-child .outputarea .limpar {
+    border: 1px solid #a6c1ee;
+    color: #343A40;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.main-container-child .outputarea .limpar:hover {
+    background: #a6c1ee;
+    color: #343A40;
+    transition: .3s ease;
+}
+
+.main-container-child .outputarea p {
+    text-align: center;
+    color: #343A40;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+footer {
+    background: #a6c1ee;
+    display: block;
+    height: 74px;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+footer  a {
+    padding-left: 4px;
+    text-decoration: none;
+    color: #0A3871;
+}
+
+a:hover {
+    color: #343A40;
+    transition: .3s ease;
+    
+}
+
+ion-icon {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #0A3871;
+    font-size: 1rem;
+}
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media-links ion-icon {
+    font-size: 26px;
+}
+
+
+@media screen and (max-width: 964px) {
+
+    .main-container-child {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-container-child .inputarea-box {
+        margin-top: 650px;
+        padding: 20px;
+    }
+    .main-container-child .inputarea-box textarea {
+        height: 134px;
+    }
+
+    .main-container-child .inputarea-box .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 90px;
+    }
+
+    .main-container-child .inputarea-box button {
+        width: 150px;
+        font-size: .7rem;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container-child .outputarea {
+        width: 400px;
+        height: 500px;
+        margin-top: 0px;
+    }
+
+    .main-container-child .outputarea textarea {
+        height: 100px;
+        width: 400px;
+    }
+    .main-container-child .outputarea .image {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        top: 580px;
+        }
+}
+
+@media screen and (max-width: 474px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+    .main-container-child .inputarea-box textarea {
+        width: 370px;
+    }
+    .main-container-child .outputarea {
+        width: 340px;
+        height: 500px;
+    }
+    .main-container-child .outputarea textarea  {
+        width: 330px;
+        height: 74px;
+    }
+}

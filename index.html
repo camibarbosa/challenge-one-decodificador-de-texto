@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://kit.fontawesome.com/55f43e10b3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Decodificador de Texto - Challenge ONE</title>
+</head>
+<body>
+        <header class="logo">
+            <img src="assets/images/logo.png" alt="logo">
+            <h1>Decodificador de Texto</h1>
+        </header>
+
+        <main class="main-container">
+            <div class="main-container-child">
+                <div class="inputarea-box">
+                    <textarea id="entradaTexto" autofocus 
+                    placeholder="Digite seu texto..."></textarea>
+                    <div class="alert">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="cripto-btn" id="criptografar" onclick="criptografarTexto()" ><ion-icon name="lock-closed-outline"></ion-icon>Criptografar</button>
+
+                        <button class="descripto-btn" id="descriptografar" onclick=" descriptografarTexto()"><ion-icon name="lock-open-outline"></ion-icon>Descriptografar</button>
+                    </div>
+
+                </div>
+                <div class="outputarea">
+                    <h1>Mensagens codificadas</h1>
+                    <div class="output-textarea">
+                        <textarea id="saidaTexto"></textarea>
+                        <div class="image">
+                           <img src="assets/images/img-bcg.png" alt="">
+                        </div> 
+                    </div>
+
+                    <p class="text1">Nenhuma mensagem encontrada!</p>
+                    <p class="text2">Deixe um texto que você deseja <br>criptografar ou descriptografar.</p>
+        
+                    <div class="button">
+                        <button type="button" class="copiar" id="copiaBotao" onclick="copiar()">Copiar</button>
+                        <button type="button" class="limpar" id=limpaBotao" onclick="limparTexto()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+               <p>Desenvolvido por <a href="https://github.com/camibarbosa" target="_blank"> Camila Barbosa </a> | Challenge ONE</p>
+               <div class="social-media-links"> <a href="https://github.com/camibarbosa" target="_blank"><ion-icon name="logo-github"></ion-icon></a>               <a href="https://www.linkedin.com/in/iamcamilabarbosa/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+               </div>
+            </footer>
+        </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./assets/scripts/main.js"></script>
+</body>
+</html>
