@@ -1,6 +1,7 @@
-# Decodificador de texto
- Construindo um decodificador de texto com Javascript, primeiro desafio desenvolvido na formação ONE da Oracle.
+# Decodificador de texto 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUÍDO&color=GREEN&style=for-the-badge)
 
+Construindo um decodificador de texto com Javascript, primeiro desafio desenvolvido na formação ONE da Oracle.
 
 As "chaves" de criptografia que utilizaremos são:
 A letra "e" é convertida para "enter"
@@ -20,3 +21,5 @@ gaitober" => "gato"
 
 ## Método 
 Utilizei o método JavaScript String replace() para fazer uma substituição de string e retorna a operação em uma nova string.  
+
+![screencapture-camibarbosa-github-io-challenge-one-decodificador-de-texto-2022-12-29-20_24_37](https://user-images.githubusercontent.com/97048604/210020570-f62ace2e-b698-419b-b64b-1e0bf8a7dd16.png)
