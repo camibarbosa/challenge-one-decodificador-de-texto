@@ -31,7 +31,7 @@ function descriptografarTexto() {
 };
 
 function copiar() {
-    var copiarTexto = document.getElementById('entradaTexto');
+    var copiarTexto = document.getElementById('saidaTexto');
     if(copiarTexto.value === ''){
       saidaTexto.innerHTML = 'É preciso digitar algo, tente novamente!' 
     } else {
